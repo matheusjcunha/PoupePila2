@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">PoupePila</string>
+    <string name="entrar">Entrar</string>
+    <string name="e_mail">E-mail</string>
+    <string name="senha">Senha</string>
+    <string name="cadastre_se">Cadastre-se</string>
+    <string name="nome">Nome</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="digite_o_nome_do_produto">Digite o nome do produto</string>
+    <string name="ou_se_preferir">Ou se preferir</string>
+    <string name="lista_de_favoritos">Favoritos</string>
+    <string name="lista_premium">Premium</string>
+    <string name="compras">Compras</string>
+    <string name="salvar">Salvar</string>
+    <string name="menu_principal">Menu Principal</string>
+    <string name="carrinho">Carrinho</string>
+    <string name="meu_carrinho">Meu Carrinho</string>
+    <string name="digite_o_pre_o_que_voc_est_visualizando">Digite o preço que você está visualizando</string>
+    <string name="comparar">Comparar</string>
+    <string name="adquirir_premium">Adquirir Premium</string>
+    <string name="aceito_os_termos_de_uso">Aceito os termos de uso</string>
+    <string name="local_atual">Local atual</string>
+</resources>

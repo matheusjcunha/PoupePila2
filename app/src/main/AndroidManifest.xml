@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.loremjit.poupepila">
+
+    <application
+        android:name=".database.InitRealm"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activities.ContratoPremiumActivity"></activity>
+        <activity android:name=".activities.MenuPrincipalActivity" />
+        <activity android:name=".activities.Listas.ListaPremiumActivity" />
+        <activity android:name=".activities.Login.FormularioUsuarioActivity" />
+        <activity android:name=".activities.Listas.ListaFavoritoActivity" />
+        <activity android:name=".activities.Listas.ListaCompraActivity" />
+        <activity android:name=".activities.Listas.ListaPrecoActivity" />
+        <activity android:name=".activities.Preco.InformaPrecoActivity" />
+        <activity android:name=".activities.Produto.LeituraEanActivity" />
+        <activity android:name=".activities.Listas.CarrinhoCompraActivity" />
+        <activity android:name=".activities.Login.LoginCadastroActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".activities.Login.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
