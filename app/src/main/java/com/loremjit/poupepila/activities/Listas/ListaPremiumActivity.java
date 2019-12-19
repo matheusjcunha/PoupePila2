@@ -1,14 +1,19 @@
 package com.loremjit.poupepila.activities.Listas;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
 import com.loremjit.poupepila.R;
 import com.loremjit.poupepila.adapters.ListaPremiumAdapter;
 import com.loremjit.poupepila.database.PoupePilaDAO;
+import com.loremjit.poupepila.database.model.ListaPremiumCompra;
 import com.loremjit.poupepila.security.Sessao;
 
 public class ListaPremiumActivity extends AppCompatActivity {
@@ -34,6 +39,32 @@ public class ListaPremiumActivity extends AppCompatActivity {
         intent.putExtra("listaId",id);
         this.posicao = posicao;
         startActivityForResult(intent,1);
+    }
+
+    public void botaoAdicionarListaPremium(View v){
+        final EditText txtUrl = new EditText(this);
+
+        new AlertDialog.Builder(this)
+                .setTitle("Nome da Lista")
+                .setMessage("")
+                .setView(txtUrl)
+                .setPositiveButton("Criar", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int whichButton) {
+                        String titulo = txtUrl.getText().toString();
+                        if(!titulo.trim().isEmpty()){
+                            ListaPremiumCompra lista = new ListaPremiumCompra();
+                            lista.setId(db.nextIdObjectRealm(ListaPremiumCompra.class));
+                            lista.setNome(titulo);
+                            db.addListaPremiumCompra(Sessao.getInstance().getIdSession(),lista);
+                            adapter.notifyItemInserted(db.getLista(Sessao.getInstance().getIdSession(),"premium").size()-1);
+                        }
+                    }
+                })
+                .setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int whichButton) {
+                    }
+                })
+                .show();
     }
 
     @Override

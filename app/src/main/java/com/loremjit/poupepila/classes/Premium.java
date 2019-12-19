@@ -8,7 +8,6 @@ public class Premium extends Usuario {
     private String endereco;
     private String cpf;
     private int idade;
-    private ArrayList<Produto> listaCompras;
 
     public void criarListapProdutos(){
 

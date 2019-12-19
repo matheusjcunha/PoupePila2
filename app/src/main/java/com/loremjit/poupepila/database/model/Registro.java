@@ -12,7 +12,7 @@ public class Registro extends RealmObject {
     private int estabelecimento_id;
     private String novo_estabelecimento;
     private int produto_id;
-    private double preco_digitaado;
+    private double preco_digitado;
     private int base_id;
     private boolean preco_verificado;
 
@@ -64,12 +64,12 @@ public class Registro extends RealmObject {
         this.produto_id = produto_id;
     }
 
-    public double getPreco_digitaado() {
-        return preco_digitaado;
+    public double getPreco_digitado() {
+        return preco_digitado;
     }
 
-    public void setPreco_digitaado(double preco_digitaado) {
-        this.preco_digitaado = preco_digitaado;
+    public void setPreco_digitado(double preco_digitado) {
+        this.preco_digitado = preco_digitado;
     }
 
     public int getBase_id() {

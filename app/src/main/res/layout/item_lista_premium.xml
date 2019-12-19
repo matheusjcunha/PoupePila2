@@ -3,25 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:padding="10dp"
-    android:background="@color/fontWhite"
+    android:layout_height="wrap_content"
     android:layout_marginTop="5dp"
-    android:layout_height="wrap_content">
+    android:background="@color/fontWhite"
+    android:padding="10dp">
 
     <TextView
-        android:id="@+id/tvTituloFavorito"
+        android:id="@+id/tvTituloItPremium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
-        android:textSize="16sp"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/ivRemoveFavorito"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_clear_red_24dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

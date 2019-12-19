@@ -14,6 +14,10 @@ public class Produto extends RealmObject {
     private double preco;
     @Ignore
     private int quantidade;
+    @Ignore
+    private int estabelecimento_id;
+    @Ignore
+    private int cliente_id;
 
     public int getId() {
         return id;
@@ -45,5 +49,37 @@ public class Produto extends RealmObject {
 
     public void setDepartamento(String departamento) {
         this.departamento = departamento;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public void setPreco(double preco) {
+        this.preco = preco;
+    }
+
+    public int getQuantidade() {
+        return quantidade;
+    }
+
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
+    }
+
+    public int getEstabelecimento_id() {
+        return estabelecimento_id;
+    }
+
+    public void setEstabelecimento_id(int estabelecimento_id) {
+        this.estabelecimento_id = estabelecimento_id;
+    }
+
+    public int getCliente_id() {
+        return cliente_id;
+    }
+
+    public void setCliente_id(int cliente_id) {
+        this.cliente_id = cliente_id;
     }
 }

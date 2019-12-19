@@ -22,7 +22,7 @@
         android:layout_height="0dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="32dp"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox"
+        app:layout_constraintBottom_toTopOf="@+id/cbTermosContrato"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView12">
@@ -30,11 +30,19 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" />
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvTextoContrato"
+                android:layout_width="match_parent"
+                android:textColor="@color/fontWhite"
+                android:layout_height="match_parent"
+                android:text="TextView" />
+        </LinearLayout>
     </ScrollView>
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/cbTermosContrato"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -50,6 +58,7 @@
         android:text="@string/adquirir_premium"
         android:background="@color/colorPrimaryDark"
         android:textColor="@color/fontWhite"
+        android:onClick="botaoAdquirirPremium"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

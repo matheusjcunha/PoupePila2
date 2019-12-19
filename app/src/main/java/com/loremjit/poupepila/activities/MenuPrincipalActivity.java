@@ -11,8 +11,10 @@ import android.widget.TextView;
 import com.loremjit.poupepila.MainActivity;
 import com.loremjit.poupepila.R;
 import com.loremjit.poupepila.activities.Listas.CarrinhoCompraActivity;
+import com.loremjit.poupepila.activities.Listas.ListaEstabelecimentoActivity;
 import com.loremjit.poupepila.activities.Listas.ListaFavoritoActivity;
 import com.loremjit.poupepila.activities.Listas.ListaPremiumActivity;
+import com.loremjit.poupepila.activities.Listas.ListaProdutoActivity;
 import com.loremjit.poupepila.classes.Premium;
 import com.loremjit.poupepila.security.Sessao;
 
@@ -26,18 +28,15 @@ public class MenuPrincipalActivity extends AppCompatActivity {
     }
 
     public void botaoConsultarProduto(View v){
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
+        startActivity(new Intent(this, MainActivity.class));
     }
 
     public void botaoCarrinho(View v){
-        Intent intent = new Intent(this, CarrinhoCompraActivity.class);
-        startActivity(intent);
+        startActivity(new Intent(this, CarrinhoCompraActivity.class));
     }
 
     public void botaoFavoritos(View v){
-        Intent intent = new Intent(this, ListaFavoritoActivity.class);
-        startActivity(intent);
+        startActivity( new Intent(this, ListaFavoritoActivity.class));
     }
 
     public void botaoPremium(View v){
@@ -49,5 +48,13 @@ public class MenuPrincipalActivity extends AppCompatActivity {
         }
         Intent intent = new Intent(this,classe);
         startActivity(intent);
+    }
+
+    public void botaoEstabelecimentos(View v){
+        startActivity(new Intent(this, ListaEstabelecimentoActivity.class));
+    }
+
+    public void botaoProdutos(View v){
+        startActivity(new Intent(this, ListaProdutoActivity.class));
     }
 }

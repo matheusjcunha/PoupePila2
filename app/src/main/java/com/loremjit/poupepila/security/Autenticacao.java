@@ -5,12 +5,12 @@ import com.loremjit.poupepila.classes.Premium;
 import com.loremjit.poupepila.classes.Usuario;
 import com.loremjit.poupepila.database.PoupePilaDAO;
 import com.loremjit.poupepila.database.model.Cliente;
+import com.loremjit.poupepila.database.model.Lista;
 
 public class Autenticacao {
 
     public boolean connect(String login, String pass){
         boolean sucess = false;
-
         PoupePilaDAO db = PoupePilaDAO.getInstance();
         Cliente cliente = db.getCliente(login,pass);
         Usuario usuario;
@@ -22,6 +22,14 @@ public class Autenticacao {
                 usuario = new Premium();
             }else{
                 usuario = new Basico();
+            }
+
+            //Cria o registro único na tabela de Lista
+            if(db.getListaCliente(cliente.getId()) == null){
+                Lista lista = new Lista();
+                lista.setId(db.nextIdObjectRealm(Lista.class));
+                lista.setCliente_id(cliente.getId());
+                db.create(lista);
             }
 
             //Prepara o usuário

@@ -2,13 +2,13 @@ package com.loremjit.poupepila.security;
 
 import com.loremjit.poupepila.classes.Usuario;
 
-public class Sessao {
+public final class Sessao {
     private Usuario usuario;
     private int idSession;
+    private int estabelecimentoAtualId;
     private static Sessao Instance;
 
     private Sessao() {
-        this.usuario = null;
     }
 
     public static synchronized Sessao getInstance() {
@@ -32,5 +32,13 @@ public class Sessao {
 
     public void setIdSession(int idSession) {
         this.idSession = idSession;
+    }
+
+    public int getEstabelecimentoAtualId() {
+        return estabelecimentoAtualId;
+    }
+
+    public void setEstabelecimentoAtualId(int estabelecimentoAtualId) {
+        this.estabelecimentoAtualId = estabelecimentoAtualId;
     }
 }

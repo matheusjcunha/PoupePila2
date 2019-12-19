@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 import com.loremjit.poupepila.MainActivity;
 import com.loremjit.poupepila.R;
+import com.loremjit.poupepila.activities.cadastros.LoginCadastroActivity;
 import com.loremjit.poupepila.security.Autenticacao;
 import com.loremjit.poupepila.security.Sessao;
 
@@ -36,7 +37,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void botaoCadastro(View v){
-        startActivity(new Intent(this,LoginCadastroActivity.class));
+        startActivity(new Intent(this, LoginCadastroActivity.class));
 
     }
 

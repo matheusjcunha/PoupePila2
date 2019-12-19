@@ -24,7 +24,7 @@ public class ListaFavoritoActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_lista_favorito);
 
-        rvLista = findViewById(R.id.rvListaPremium);
+        rvLista = findViewById(R.id.rvListaFavorito);
         adapter = new ListaFavoritoAdapter();
         rvLista.setLayoutManager( new LinearLayoutManager(this));
         rvLista.setAdapter(adapter);

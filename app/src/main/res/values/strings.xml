@@ -20,4 +20,16 @@
     <string name="adquirir_premium">Adquirir Premium</string>
     <string name="aceito_os_termos_de_uso">Aceito os termos de uso</string>
     <string name="local_atual">Local atual</string>
+    <string name="preco">Preço</string>
+    <string name="estabelecimentos">Estabelecimentos</string>
+    <string name="uf">UF</string>
+    <string name="cidade">Cidade</string>
+    <string name="bairro">Bairro</string>
+    <string name="endereco">Endereço</string>
+    <string name="telefone">Telefone</string>
+    <string name="estabelecimento">Estabelecimento</string>
+    <string name="codigo_ean">Código EAN</string>
+    <string name="departamento">Departamento</string>
+    <string name="produtos">Produtos</string>
+    <string name="consultar_produto">Consultar Produto</string>
 </resources>

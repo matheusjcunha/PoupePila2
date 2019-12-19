@@ -5,6 +5,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.loremjit.poupepila.R;
 import com.loremjit.poupepila.activities.Listas.ListaPremiumActivity;
 
 public class PremiumViewHolder extends RecyclerView.ViewHolder {
@@ -14,6 +15,8 @@ public class PremiumViewHolder extends RecyclerView.ViewHolder {
 
     public PremiumViewHolder(@NonNull View itemView) {
         super(itemView);
+
+        tvTitulo = itemView.findViewById(R.id.tvTituloItPremium);
 
         itemView.setOnClickListener(new View.OnClickListener() {
             @Override

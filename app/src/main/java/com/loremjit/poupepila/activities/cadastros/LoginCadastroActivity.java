@@ -1,4 +1,4 @@
-package com.loremjit.poupepila.activities.Login;
+package com.loremjit.poupepila.activities.cadastros;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,7 +9,6 @@ import android.widget.EditText;
 import com.loremjit.poupepila.R;
 import com.loremjit.poupepila.database.model.Cliente;
 import com.loremjit.poupepila.security.RegraNegocio;
-import com.loremjit.poupepila.security.Sessao;
 
 public class LoginCadastroActivity extends AppCompatActivity {
 

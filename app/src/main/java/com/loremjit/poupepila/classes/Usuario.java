@@ -9,7 +9,6 @@ public abstract class Usuario {
     private String email;
     private String senha;
     private String telefone;
-    private ArrayList<Produto> listaFavoritos;
 
     public Usuario(){
 
@@ -45,13 +44,5 @@ public abstract class Usuario {
 
     public void setTelefone(String telefone) {
         this.telefone = telefone;
-    }
-
-    public ArrayList<Produto> getListaFavoritos() {
-        return listaFavoritos;
-    }
-
-    public void setListaFavoritos(ArrayList<Produto> listaFavoritos) {
-        this.listaFavoritos = listaFavoritos;
     }
 }
